@@ -1,6 +1,6 @@
-package com.chriszou.auttutorial.test;
+package com.chriszou.auttutorial.test.junit;
 
-import com.chriszou.auttutorial.Calculator;
+import com.chriszou.auttutorial.junit.Calculator;
 
 import org.junit.Before;
 import org.junit.Ignore;

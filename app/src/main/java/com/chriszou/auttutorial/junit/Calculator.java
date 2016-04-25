@@ -1,4 +1,4 @@
-package com.chriszou.auttutorial;
+package com.chriszou.auttutorial.junit;
 
 /**
  * Created by xiaochuang on 4/12/16.
