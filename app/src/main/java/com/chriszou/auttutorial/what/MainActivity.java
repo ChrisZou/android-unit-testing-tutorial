@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Other code, like verify username and password
 
-        mUserManager.login(username, password);
+        mUserManager.performLogin(username, password);
     }
    
     @Subscribe

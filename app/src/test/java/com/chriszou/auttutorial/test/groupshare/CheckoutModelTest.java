@@ -1,5 +1,8 @@
-package com.chriszou.auttutorial.groupshare;
+package com.chriszou.auttutorial.test.groupshare;
 
+import com.chriszou.auttutorial.groupshare.CheckoutModel;
+import com.chriszou.auttutorial.groupshare.NetworkCallback;
+import com.chriszou.auttutorial.groupshare.PaymentApi;
 import com.chriszou.auttutorial.test.groupshare.JSpec;
 import com.squareup.otto.Bus;
 
