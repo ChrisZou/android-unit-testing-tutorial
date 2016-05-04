@@ -78,7 +78,7 @@ public class LoginPresenterTest {
         Mockito.when(spyValidator.verifyPassword(anyString())).thenReturn(true);
 
         spyValidator.verifyPassword("xiaochuang_is_handsome");
-        Mockito.verify(spyValidator).verifyPassword("xiaochuang_is_handsome");
+        Mockito.verify(spyValidator, Mockito.times(2)).verifyPassword("xiaochuang_is_handsome");
 
     }
 }
