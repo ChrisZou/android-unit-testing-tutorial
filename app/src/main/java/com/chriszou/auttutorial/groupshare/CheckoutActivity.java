@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.chriszou.auttutorial.R;
+import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
 import javax.inject.Inject;
@@ -26,6 +27,7 @@ public class CheckoutActivity extends Activity {
 
         String paymentId = "some paymentId"; //这个是从外面传进来的
 
+        mCheckoutModel = new CheckoutModel(new PaymentApi(), new Bus()); //假设这里是使用Dagger2注入进来的，具体这种怎么实现，请参考后续文章。
         mCheckoutModel.loadCheckoutData(paymentId);
     }
 
