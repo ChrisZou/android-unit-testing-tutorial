@@ -8,4 +8,4 @@ Code project corresponding to a serials of tutorial posts for android unit testi
 [Android单元测试在蘑菇街支付金融部门的实践](http://chriszou.com/2016/04/25/android-unit-testing-wechat-group-share.html) 代码和测试代码在`groupshare`子package下面  
 [Android单元测试（四）：Mock以及Mockito的使用](http://chriszou.com/2016/04/29/android-unit-testing-mockito.html) 代码和测试代码在`mockito`子package下面  
 [Android单元测试（五）：依赖注入，将mock方便的用起来](http://chriszou.com/2016/05/06/android-unit-testing-di.html) 代码和测试代码在`di`子package下面  
-[Android单元测试（六）：使用dagger2来做依赖注入，以及在单元测试中的应用(http://chriszou.com/2016/05/10/android-unit-testing-di-dagger.html) 代码和测试代码在`dagger2`子package下面
+[Android单元测试（六）：使用dagger2来做依赖注入，以及在单元测试中的应用](http://chriszou.com/2016/05/10/android-unit-testing-di-dagger.html) 代码和测试代码在`dagger2`子package下面

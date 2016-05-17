@@ -63,7 +63,6 @@ public class LoginPresenterTest {
 
 
         mockUserManager.performLogin("xiaochuang", "xiaochuang password", Mockito.mock(NetworkCallback.class));
-        //
     }
 
     @Test
