@@ -72,13 +72,17 @@ public class LoginPresenterTest {
         PasswordValidator spyValidator = Mockito.spy(PasswordValidator.class);
 
         //在默认情况下，spy对象会调用这个类的real implementation，并返回相应的返回值
-        spyValidator.verifyPassword("xiaochuang_is_handsome"); //true
-        spyValidator.verifyPassword("xiaochuang_is_not_handsome"); //false
+        boolean result = spyValidator.verifyPassword("xiaochuang_is_handsome");//true
+        Assert.assertTrue(result);
+        result = spyValidator.verifyPassword("xiaochuang_is_not_handsome"); //false
+        Assert.assertFalse(result);
 
+        //也可以指定spy对象的方法的行为
         Mockito.when(spyValidator.verifyPassword(anyString())).thenReturn(true);
 
-        spyValidator.verifyPassword("xiaochuang_is_handsome");
-        Mockito.verify(spyValidator, Mockito.times(2)).verifyPassword("xiaochuang_is_handsome");
+        result = spyValidator.verifyPassword("xiaochuang_is_not_handsome");
+        Assert.assertTrue(result);
+        Mockito.verify(spyValidator, Mockito.times(2)).verifyPassword("xiaochuang_is_not_handsome");
 
     }
 }
