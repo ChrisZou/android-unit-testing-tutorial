@@ -19,4 +19,7 @@ public class UserManager {
 
     public void performLogin(String username, String password) {
     }
+
+    public void performRegister(String username, String password) {
+    }
 }

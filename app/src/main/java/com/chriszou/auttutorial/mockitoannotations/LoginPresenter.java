@@ -1,5 +1,6 @@
-package com.chriszou.auttutorial.dagger2;
+package com.chriszou.auttutorial.mockitoannotations;
 
+import com.chriszou.auttutorial.dagger2.UserManager;
 import com.chriszou.auttutorial.mockito.PasswordValidator;
 
 import javax.inject.Inject;
@@ -10,6 +11,10 @@ import javax.inject.Inject;
 public class LoginPresenter {
     private final UserManager mUserManager;
     private final PasswordValidator mPasswordValidator;
+
+    public LoginPresenter() {
+        this(null, null);
+    }
 
     @Inject
     public LoginPresenter(UserManager userManager, PasswordValidator passwordValidator) {
@@ -22,10 +27,6 @@ public class LoginPresenter {
         if (!mPasswordValidator.verifyPassword(password)) return;
 
         mUserManager.performLogin(username, password);
-    }
-
-    public boolean isLoggedIn() {
-        return false;
     }
 
 }
