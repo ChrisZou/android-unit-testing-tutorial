@@ -29,6 +29,11 @@ android {
     }
 }
 
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.3.0'
@@ -43,4 +48,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     testCompile "org.mockito:mockito-core:1.10.19"
     testCompile 'org.robolectric:robolectric:3.0'
+
+    testCompile 'com.github.fabioCollini:DaggerMock:0.6.1'
+    androidTestCompile 'com.github.fabioCollini:DaggerMock:0.6.1' //如果你需要在Instrumentation、Espresso、UiAutomator里面使用的话
 }

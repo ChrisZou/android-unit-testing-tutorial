@@ -19,8 +19,7 @@ import static org.mockito.Mockito.verify;
  */
 public class LoginPresenterTest {
 
-    @Rule
-    public MockitoRule mockitoRule = MockitoJUnit.rule();
+    @Rule public MockitoRule mockitoRule = MockitoJUnit.rule();
 
     @Mock
     UserManager mockUserManager;

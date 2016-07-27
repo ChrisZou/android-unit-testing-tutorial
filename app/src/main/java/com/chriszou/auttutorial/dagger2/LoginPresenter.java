@@ -2,8 +2,6 @@ package com.chriszou.auttutorial.dagger2;
 
 import com.chriszou.auttutorial.mockito.PasswordValidator;
 
-import javax.inject.Inject;
-
 /**
  * Created by xiaochuang on 4/29/16.
  */
@@ -11,7 +9,6 @@ public class LoginPresenter {
     private final UserManager mUserManager;
     private final PasswordValidator mPasswordValidator;
 
-    @Inject
     public LoginPresenter(UserManager userManager, PasswordValidator passwordValidator) {
         this.mUserManager = userManager;
         this.mPasswordValidator = passwordValidator;

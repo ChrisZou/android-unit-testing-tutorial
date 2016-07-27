@@ -13,4 +13,6 @@ public interface AppComponent {
     LoginPresenter loginPresenter();
 
     void inject(LoginActivity mainActivity);
+
+    void inject(com.chriszou.auttutorial.daggermock.LoginActivity loginActivity);
 }

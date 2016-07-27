@@ -34,7 +34,7 @@ public class LoginPresenterTest {
 //    }
 
     @Test
-    @JSpec(desc = "should ")
+    @JSpec(desc = "should fail for mock is not used")
     public void testLogin() {
         UserManager mockUserManager = mock(UserManager.class);
         LoginPresenter presenter = new LoginPresenter(mockUserManager, new PasswordValidator());//因为这里我们不verify PasswordValidator，所以不需要mock这个。
